@@ -12,26 +12,30 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+
+}
 .wrapper {
   display: flex;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  flex-direction: row-reverse;
 }
 
 .maininfo {
   display: flex;
-  width: 450px;
-  height: auto;
+  width: 30%;
+  height: 100%;
   flex-direction: column;
   background-color: var(--maincolor);
-  flex-shrink: 0;
+  overflow: auto;
 }
 
 .title {
   font-family: var(--font);
   font-size: 32pt;
+  font-weight: 200;
   color: var(--fontcolor);
   padding: 10px;
 }
@@ -39,6 +43,7 @@ body {
 .subtitle {
   font-family: var(--font);
   font-size: 18pt;
+  font-weight: 200;
   color: var(--fontcolor);
   padding: 10px;
 }
@@ -46,6 +51,7 @@ body {
 .infotext {
   font-family: var(--font);
   font-size: 12pt;
+  font-weight: 200;
   color: var(--fontcolor);
   line-height: 20px;
   padding: 10px;
@@ -53,7 +59,7 @@ body {
 
 .projectinfo {
   font-family: var(--font);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 12pt;
   color: var(--fontcolor);
   padding: 10px;
@@ -62,7 +68,7 @@ body {
 
 .logbuch {
   display: flex;
-  flex-grow: 2;
+  width: 70%;
 }
 
 .accordion {
@@ -70,6 +76,7 @@ body {
   overflow: auto;
   font-family: var(--font);
   font-size: 18pt;
+  font-weight: 200;
   background: #ffffff;
   width: 100%;
   height: 100%;
@@ -113,6 +120,7 @@ body {
   background: #ffffff;
   line-height: 1.6;
   font-size: 12pt;
+  font-weight: 200;
   display: none;
 }
 
@@ -133,9 +141,10 @@ body {
 
 .description {
   /*border: 1px solid red;*/
-  width: 920px;
+  width: 65%;
   margin-right: 20px;
   margin-bottom: 20px;
+
 }
 
 .description > p {
@@ -144,19 +153,24 @@ body {
 
 .description2 {
   /*border: 1px solid red;*/
-  width: 450px;
+  width: 30%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .media {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 33%;
   display: flex;
   flex-wrap: wrap;
 }
 
+
+
 .media > img, video {
   /*border: 1px solid red;*/
-  max-width: 450px;
+  width: 100%;
   object-fit: contain;
   object-position: top left;
   margin-right: 20px;
@@ -167,33 +181,39 @@ body {
 .media2 {
     display: flex;
     flex-wrap: wrap;
+    width: 12%;
 }
 
 .media2 > img {
+    width: 100%;
     object-fit: contain;
     object-position: top left;
-    max-width: 174px;
-    margin-right: 0px;
     margin-bottom: 20px;
 }
 
 .media3 {
   display: flex;
   flex-wrap: wrap;
+  width: 20%;
 }
 
 .media3 > img {
+  width: 100%;
   object-fit: contain;
   object-position: top left;
-  max-width: 262px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.media4 {
+  width: 37%;
+  margin-right: 20px;
 }
 
 .media4 > img{
   object-fit: contain;
   object-position: top left;
-  max-width: 535px;
+  max-width: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -205,23 +225,28 @@ body {
   margin-bottom: 20px;
 }
 
-.vimeo > iframe {
-  /*border: 1px solid red;*/
-  width: 1385px;
-  height: 785px;
-  margin: 0;
-  padding: 0;
+.vimeo {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
 }
+.vimeo > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 
 .sources {
   text-align: left;
-  max-width: 1360px;
+  max-width: 100%;
   font-size: 10pt;
 }
 
 .impressum {
   text-align: left;
-  max-width: 1385px;
+  max-width: 100%;
   font-size: 10pt;
 
 }
