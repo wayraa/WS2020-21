@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>printing in mid air - Wayra Aguilar</title>
+  <!-- Short description of the document (limit to 150 characters) -->
+  <meta name="description" content="an experimental approach to defaults in 3D Printing">
+  <!-- Helps prevent duplicate content issues -->
+  <link rel="canonical" href="http://howww.de/fromurltoirl">
+  <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <!-- Points to an external CSS style sheet -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+  <div class="maininfo">
+    <div class="title">printing in mid air</div>
+    <div class="subtitle">an experimental approach to 3D Printing</div>
+    <div class="infotext">This semester I have been working on
+      experimental 3d printing and controlling collaborative robots.
+      with „Printing in mid air, an experimental approach to defaults
+      in 3d printing“ i dealt with a characteristic of 3d printing
+      that would usually be considered as faulty. Stringing, also
+      known as oozing, happens when filament oozes out of the nozzle
+      while the extruder is moving from one location to another. even
+      though the extruder does not receive any command to convey the
+      filament while it is traveling along this path, the portion of
+      the filament that has already been melted tends to naturally
+      drip off the nozzle, leaving behind very thin strands of plastic.
+      I wanted to intentionally control this phenomenon and use
+      it as a design and construction tool.<br><br>
+      My goal was to print into air. With the help of Silkworm, I
+      could control the extrusion of filament, temperature, printing
+      speed and several other parameters separately from one another.
+      I was able to control the path between two points in a way
+      that a string was printed in the air between the two printing
+      points. I eventually transferred this process to various grid
+      geometries. this resulted in several studies on the properties
+      of the printed objects which, even though the PLA filament
+      didn’t have flexible characteristics, gained different material
+      properties such as translucence, flexibility and a very low
+      consumption of material through my printing process.<br></div>
+      <div class="projectinfo">
+        Wayra Aguilar<br>
+        Binary Matter 2.0<br>
+        WS 2020/21<br><br>
+        Prof. Christian Zöllner<br>
+        MA Amelie Goldfuß<br>
+        Tom Witschel<br><br>
+        Burg Giebichenstein<br>
+        University of Art and Design Halle
+      </div>
+  </div>
+
+  <div class="logbuch">
+    <div class="accordion">
+      <div>
+        <input type="checkbox" name="logbuch" id="SWxx" class="accordion__input">
+        <label style="border-top: none" for="SWxx" class="accordion__label"></label>
+        <input type="checkbox" name="logbuch" id="SW00" class="accordion__input">
+        <label style="border-top: none" for="SW00" class="accordion__label">Logbuch WS 2020/21</label>
+      </div>
+        <div>
+        <input type="checkbox" name="logbuch" id="SW01" class="accordion__input">
+        <label style="border-top: solid 2px" for="SW01" class="accordion__label">SW01 12.10.2020 Introduction</label>
+        <div class="accordion__content">
+          <div class="description">
+            <strong>The Idea:</strong> We deal with digitality as a shaping factor. How does a practical design and the associated theoretical thought framework behind it change when digital processes play a leading role? This requires extensive individual research in which we analyse where in the design process, with what intention and intensity hardware and software, algorithmic calculations and digitally controlled production methods are used. How does the formal quality of the result change? How does the use of powerful calculation of formal, constructive and perhaps also content-related elements change our work as designers? How does our focus, our activity? In the semester, we use the digital workshop intensively from the beginning. With the theoretical background knowledge and acquired Rhino/GH skills, we develop individual objects, models and prototypes. Using the possibilities of the digital workshop, these physical form with the possibilities of the digital workshop. Among other things, the aim is to explore how objects change during the transition from digital to physical form, what role the material plays in this and what parameters are added when controlling production machines.
+          </div>
+          <div class="media">
+            <img src="images/01_1.jpg" alt="timeline">
+        </div>
+          <div class="description">
+            <strong>The Aim:</strong> With the work done in this semester, we achieve a deep practical and theoretical understanding of Computational Design. This creates a foundation for personal development. Rhino is a tool used intensively in design studios. Knowing it is a very pragmatic advantage. Grasshopper and node-based design is an interesting and challenging way of thinking about design. The visually represented parametrics, understanding formal relationships by looking at them is not easy, but holds new formal results that are difficult to achieve in any other way. Working with the various 3D printing processes and other tools of the digital workshop empowers an independent and confident use of these technologies and sharpens the understanding of digitally controlled manufacturing processes. The aim of the semester is to produce designs or series of experiments that map a thorough understanding of parametric design and digital fabrication.
+          </div>
+          <div class="description2">
+            <a target="_blank" href="https://www.burg-halle.de/design/industriedesign/industriedesign/studienarbeiten/project/binary-matter-i/">&#8599;Other projects on the topic</a>
+        </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW02" class="accordion__input">
+        <label for="SW02" class="accordion__label">SW02 19.10.2020 Inspiration and Research</label>
+        <div class="accordion__content">
+          <div class="description">
+            In my research, I have moved on different levels. Through my involvement with Grasshopper, I looked into various plug-ins and their possibilities. This level was mainly influenced by what I would like to learn and can acquire as a skillset. This also led to the next focus of my research. Through the newly opened Xlab for robotics and AI at our university, I wanted to use the infrastructure and work with the two collaborative robotic arms UR5 and UR10. I looked deeper into 3D printing with the help of different robots. Most of these projects are in the context of architecture and lightweight construction. However, I wanted to work on a smaller scale and the questions of stability or statics were rather secondary to the questions of aesthetics, haptics and new material properties such as felxibility through the structure.
+          </div>
+          <div class="description2">
+            <a target="_blank" href="https://www.are.na/wayra-aguilar/research_binarymatter2-0"> 	&#8599;Are.na research Channel</a>
+        </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW03" class="accordion__input">
+        <label for="SW03" class="accordion__label">SW03 19.10.2020 Workshop 'writing G-Code with Grasshopper'</label>
+        <div class="accordion__content">
+          <div class="media3">
+            <img src="images/03_6.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/03_4.PNG" alt="food">
+          </div>
+          <div class="media4">
+            <img src="images/03-b.gif" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/03_7.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/03_3.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/03_5.PNG" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/03_2.jpg" alt="food">
+          </div>
+          <div class="media4">
+            <img src="images/03-a.gif" alt="food">
+          </div>
+          <div class="description">
+            In this workshop instructed by Tom Witschel, we learned how to use 3D printing more actively. How can we control the machine directly and in this way influence the individual printing properties? With the help of Grasshopper for Rhino we wrote a script that gives us the possibility to generate G-code ourselves. This made it possible to control and adjust parameters such as the printing temperature or the extursion rate separately and to optimise or change the printing result.
+            Through curves we created a loft, which determines the surface of our object, this was transformed by the script into a continuous polyline, which resulted in the toolpath of the printer.<br>
+            Through Attractor Point, Atracctor Curves or Attractor Images we were able to influence the surface in a controlled way and create patterns.<br>
+            The workshop was a very good basis for further work with advanced 3D printing.</div>
+          <div class="description2">
+            <a href="downloads/g-code-slicer.gh">&#8600;Download the Grasshopper Script</a><br>
+            <a href="downloads/g-code-slicer.3dm">&#8600;Download the Rhino Curves</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW04" class="accordion__input">
+        <label for="SW04" class="accordion__label">SW04 02.11.2020 Rebrief</label>
+        <div class="accordion__content">
+          <div class="description">
+            <strong>Project idea:</strong> Starting with 3D printed textiles, I would like to explore what requirements materials need for clothing or interaction with the human body and how these new, perhaps partly speculative materials can be produced with the help of digital manufacturing methods. What combinations of materials result in new functions and properties for the material? How can I produce them in a meaningful way? When does it make sense to rethink materials for clothing or when does it become a real alternative to conventional textiles? A kind of collection or overview of manufacturing processes for materials that can be worn on the body could emerge. I am very interested in digital fabrication and its impact on aesthetics and my design. Here I would like to find a way to make the material samples visible in different ways and also deal with them on a meta-level.
+        </div>
+        <div class="media">
+          <img src="images/04_1.PNG" alt="rebrief">
+        </div>
+        <div class="description">
+            <strong>concret goals and methods:</strong> Acquiring hard skills is one of the most important goals for me in this project. This includes working more and more independently with Rhino and Grasshopper, but also expanding and deepening my knowledge of various machines in the digital workshop. In particular, I would like to expand my skills in the various 3D printing processes FDM, SLA and SLS and get to know and explore the handling, control and possibilities of the UR5 and UR10 robot arms and the DexArm. In addition, I would like to learn how to program simple websites and HTML, CSS and generate renderings in keyshot for my documentary. One method should be to limit myself to small material samples for the "end result", which can be produced quickly and thus offer the possibility of creating variants in order not to get bogged down with the question of the end product and set my expectations too high. I also want to continue to work out what approaches to a project work for me. How do I want to work and which methods help me? In addition, I ask myself how I can sensibly define sub-goals so as not to be overwhelmed by having to do everything in parallel and losing the overview.
+        </div>
+        <div class="media">
+          <img src="images/04_2.jpg" alt="rebrief prios">
+        </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW05" class="accordion__input">
+        <label for="SW05" class="accordion__label">SW05 09.11.2020 Dive into Silkworm</label>
+        <div class="accordion__content">
+          <div class="description">
+            <strong>Silkworm:</strong> is a plugin that translates Grasshopper and Rhino geometry into GCode for 3d printing. Silkworm allows for the complete and intuitive manipulation of the printer GCode, enabling novel printed material properties to be specified by non-solid geometry and techniques of digital craft.<br>Project Silkworm is an open project to develop the concept of digital craft via the resources of open source 3d printing technology. The revolution of 3D printing is seeing a rise in novel methodologies of material design communication, from concept through to fabrication. Now additive processes can be manipulated through data driven logics programmed directly by the designer. Silkworm offers the designer a vocabulary to choreograph these processes and develop the way the printed object is conceived.
+          </div>
+          <div class="media">
+            <img src="images/05_1.jpg" alt="silkworm screenshot">
+          </div>
+          <div class="description">
+          </div>
+          <div class ="description2">
+              <a target="_blank" href="https://github.com/ProjectSilkworm/Silkworm">&#8600;Download the Silkworm Plugin</a><br>
+              <a target="_blank" href="https://vimeo.com/461933660">&#8599;Best Tutorial on Silkworm and other Plugins</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW06" class="accordion__input">
+        <label for="SW06" class="accordion__label">SW06 16.11.2020 off topic Compactweek .aci</label>
+        <div class="accordion__content">
+          <div class="media2">
+            <img src="images/06_1.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_2.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_3.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_4.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_5.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_6.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_7.jpg" alt="letter">
+          </div>
+          <div class="media2">
+            <img src="images/06_8.jpg" alt="letter">
+          </div class="description">analog character interchange
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW07" class="accordion__input">
+        <label for="SW07" class="accordion__label">SW07 23.11.2020 1st printing Session</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/08_1.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/08_2.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/08_3.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_2.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_3.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_4.jpg" alt="printing test">
+          </div>
+          <div class="description">
+            After a few trials and the right start and end code, I was able to start my first attempts. All results were printed with an Ultimaker³ and in PLA.<br>
+            In the first printing session I focused on testing how far the strings can be stretched between the ridges without becoming uneven due to the extursion. I also tested different diameters for the ribs to see how small the diameter can be without the strings coming loose and being continuously attached to these nodes. In addition, I have also tested which angles of inclination are possible at which the grid body remains intact.The result in the last photo is from a faulty Grasshopper script. Out of curiosity whether it is possible to print a new ridge on a stretched string, I printed the faulty file anyway. Unfortunately, I could not create this phenomenon in other geometries, but I find the approach very exciting and worth exploring.
+          </div>
+          <div class ="description2">
+
+All the G-codes used for this are linked here and also in the other print sessions on the right and can be downloaded to better understand the results here or to take values such as printing temperature, printing speed or extrution rate.<br>
+              <a href="downloads/stringing_test07.gcode">&#8600;Download the G-Code1</a><br>
+              <a href="downloads/stringing_test08.gcode">&#8600;Download the G-Code2</a><br>
+              <a href="downloads/stringing_test09.gcode">&#8600;Download the G-Code3</a><br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW08" class="accordion__input">
+        <label for="SW08" class="accordion__label">SW08 30.11.2020 2nd printing Session</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/11_1.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_5.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_6.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_7.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_8.jpg" alt="printing test">
+          </div>
+          <div class="media">
+            <img src="images/11_9.jpg" alt="printing test">
+          </div>
+          <div class="description">
+            In the next series of experiments, I continued to work on the inclinations and rotations and started looking for a suitable example geometry.<br>
+            This is how the upper results came to be. With every new grid body, you first have to find the right values to get a successful print result. The parameters that had the greatest effect on the print quality are: The extrusion, the printing speed and the printing temperature.<br>
+            Especially the printing speed influences the uniformity of the strings. The slower the string is stretched from one ridge to the next, the more evenly it stretches and gets a consistent diameter. In addition, the servo motors of the printer move less at slow printing speeds and there is therefore less vibration, which influences how well the ridges can be built up layer by layer, which is particularly important for inclined geometries.
+          </div>
+          <div class ="description2">
+              <a href="downloads/stringing_test09.gcode">&#8600;Download the G-Code4</a><br>
+              <a href="downloads/stringing_test10.gcode">&#8600;Download the G-Code5</a><br>
+              <a href="downloads/stringing_test11.gcode">&#8600;Download the G-Code6</a><br>
+              <a href="downloads/stringing_test12.gcode">&#8600;Download the G-Code7</a><br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW09" class="accordion__input">
+        <label for="SW09" class="accordion__label">SW09 07.12.2020 off topic Compactweek: Wet Track Lab</label>
+        <div class="accordion__content">
+          <div class="media3">
+            <img src="images/09_1.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/09_2.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/09_3.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/09_4.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/09_5.jpg" alt="food">
+          </div>
+          <div class="description">gentle whispers for clean dining
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW10" class="accordion__input">
+        <label for="SW10" class="accordion__label">SW10 14.12.2020 Interim Presentation</label>
+        <div class="accordion__content">
+          <div class="media3">
+            <img src="images/10_5.PNG" alt="schreenshot grasshopper">
+          </div>
+          <div class="media3">
+            <img src="images/10_5.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media3">
+            <img src="images/10_6.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media3">
+            <img src="images/10_a.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media3">
+            <img src="images/10_7.PNG" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/10_1.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/10_2.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/10_3.jpg" alt="schreenshot grasshopper">
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW11" class="accordion__input">
+        <label for="SW11" class="accordion__label">SW11 21.12.2020 3rd printing Session</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/12_1.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/12_2.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/12_3.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/12_4.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/13_3_1.jpg" alt="3d print green vase">
+          </div>
+          <div class="description">
+            This series of experiments deals once again with stretching the strings evenly over longer distances and then crossing them. Through the knowledge gained and discussions after the interim presentation, I wanted to further investigate the property of flexibility. The material PLA, which I used for all experiments, is firm and rather brittle, but by processing it into such thin strings, not the material itself but the printed objects became flexible.<br>
+I changed my shape and the resulting toolpath so that the strings intertwine at certain points but do not join at that point. Again, this took many starts before the threads stopped sticking together and the printed result was a success. As a result, fewer ridges are needed and more complex and stable objects with the above-mentioned properties are achieved.
+          </div>
+          <div class ="description2">
+              <a href="downloads/stringing_test16.gcode">&#8600;Download the G-Code8</a><br>
+              <a href="downloads/stringing_test17.gcode">&#8600;Download the G-Code9</a><br>
+              <a href="downloads/stringing_test18.gcode">&#8600;Download the G-Code10</a><br>
+              <a href="downloads/stringing_test19.gcode">&#8600;Download the G-Code11</a><br>
+          </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW12" class="accordion__input">
+        <label for="SW12" class="accordion__label">SW12 11.01.2021 4th printing Session</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/12_5.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/12_6.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/13_5.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/13_1.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/13_3.jpg" alt="3d print green vase">
+          </div>
+          <div class="media">
+            <img src="images/13_5_1.jpg" alt="3d print green vase">
+          </div>
+          <div class="description">
+            In the fourth phase of experimenting, I followed up on last week's work. I constructed more complex shapes with additional inclinations and changed the toolpath to create even more of these interweavings. The inclinations in the geometry also made the intersections 3 dimensional, which gave the objects extra stability.
+            Another observation in this series was the translucency and how it changed depending on the spacing and number of layered string curtains.<br><br>Watch the video in the final presentation to see the objects in motion and better understand their tactile qualities.
+          </div>
+          <div class ="description2">
+              <a href="downloads/stringing_test28c.gcode">&#8600;Download the G-Code12</a><br>
+              <a href="downloads/stringing_test28d.gcode">&#8600;Download the G-Code13</a><br>
+              <a href="downloads/stringing_test29a.gcode">&#8600;Download the G-Code14</a><br>
+              <a href="downloads/stringing_test29b.gcode">&#8600;Download the G-Code15</a><br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW13" class="accordion__input">
+        <label for="SW13" class="accordion__label">SW13 18.01.2021 recap</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/13_6.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/13_7.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media">
+            <img src="images/13_4_1.jpg" alt="schreenshot grasshopper">
+          </div>
+          <div class="media3">
+            <img src="images/13-a.gif">
+          </div>
+          <div class="media3">
+            <img src="images/13_10.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/13_9.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/13_8.jpg" alt="food">
+          </div>
+          <div class="media3">
+            <img src="images/13_11.jpg" alt="food">
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW14" class="accordion__input">
+        <label for="SW14" class="accordion__label">SW14 25.01.2021 Outlook: 3D printing with Collaborative Robots</label>
+        <div class="accordion__content">
+          <div class="media">
+            <img src="images/14-a.gif">
+          </div>
+          <div class="media">
+            <img src="images/14_2.PNG" alt="printing head">
+          </div>
+          <div class="media">
+            <img src="images/14_1.PNG" alt="printing head">
+          </div>
+          <div class ="description">
+            A next step can be to combine the knowledge and skills gained with work on a collaborative robot arm. The objects can be scaled well and their print settings adjusted so that one can print with the robotic arm.
+            I find this approach interesting because the robot arm expands the printing space in size and height, but also has many more movement possibilities due to its six axes, which make non-planar printing possible and aspirational.
+            <br> <br>
+To control the robot, you can also use Grasshopper and the Robots plugin. With a 3D model of the self-built print head, I was able to create print simulations with the help of the plugin and so digitally trace the toolpath to avoid errors and accidents before the real print.
+The linked Grasshopper script only needs a polyline as input for the toolpath of the robot and can then be simulated.
+          </div>
+          <div class ="description2">
+            <a target="_blank" href="https://github.com/visose/Robots/releases/">&#8600;Download the Robots Plugin</a><br>
+            <a href="downloads/robo_printing.gh">&#8600;Download the Grasshopper Script for Robot Simulation</a><br>
+            <p>You need the latest Rhino6 oder Rhino7 for this</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW15" class="accordion__input">
+        <label for="SW15" class="accordion__label">SW15 01.02.2021 Final Presentation</label>
+        <div class="accordion__content">
+          <div class="vimeo">
+            <iframe src="https://player.vimeo.com/video/507251643" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW16" class="accordion__input">
+        <label for="SW16" class="accordion__label">Sources</label>
+        <div class="accordion__content">
+          <div class="sources"><p>
+            Videos and Animations by Wayra Aguilar<br>Photos by Wayra Aguilar, Valena Ammon, Yiyun Huang, Anniek Timmermann
+          </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="logbuch" id="SW17" class="accordion__input">
+        <label for="SW17" class="accordion__label">Impressum</label>
+        <div class="accordion__content">
+          <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Wayra Aguilar <br>
+            Reilstr 22<br>
+            06114 Halle (Saale) <br>
+          </p><p><strong>Kontakt:</strong> <br>
+            Telefon: +49157-58864436<br>
+            E-Mail: <a href='mailto:wayra.aguilar@gmail.com'>wayra.aguilar@gmail.com</a></br></p><p>Haftungsausschluss: <br><br>Haftung für Inhalte<br><br>
+              Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Haftung für Links</strong><br><br>
+              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br><strong>Urheberrecht</strong><br><br>
+              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>
+              Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>
+              Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>
+              Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
+            </p><br>
+            Impressum der <a href="https://www.kanzlei-hasselbach.de/standorte/bonn/">Kanzlei Hasselbach, Bonn</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
